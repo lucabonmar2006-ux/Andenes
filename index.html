@@ -140,9 +140,9 @@
   <link rel="stylesheet" href="styles/variables.css?v=2.7.3">
   <link rel="stylesheet" href="styles/base.css?v=2.7.3">
   <link rel="stylesheet" href="styles/animations.css">
-  <link rel="stylesheet" href="styles/components.css">
-  <link rel="stylesheet" href="styles/sections.css?v=2.7.3">
-  <link rel="stylesheet" href="styles/responsive.css?v=2.7.3">
+  <link rel="stylesheet" href="styles/components.css?v=2.7.9">
+  <link rel="stylesheet" href="styles/sections.css?v=2.7.8">
+  <link rel="stylesheet" href="styles/responsive.css?v=2.7.8">
 </head>
 
 <body>
@@ -152,7 +152,7 @@
   <header class="site-header" id="siteHeader">
     <aside class="announcement-bar is-visible" id="announcementBar" role="region" aria-label="Aviso de próximo recital">
       <div class="announcement-content">
-        <span class="announcement-tag">⚡ Próximo Show</span>
+        <span class="announcement-tag"><span class="status-dot" aria-hidden="true"></span><span>Próximo Show</span></span>
         <span>24 de Octubre · 16:30 a 17:00 hs en <strong>Rock in Cuba</strong> (Buenos Aires)</span>
         <span class="announcement-countdown" id="announcementCountdown"></span>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSembxRCFsCMFyN0d6ycwtZPGDBohC66F0IJUyjNQHf_GH1oiA/viewform" target="_blank" rel="noopener noreferrer" class="announcement-link">Conseguir Entradas ➔</a>
@@ -170,7 +170,6 @@
           <a href="#inicio">Inicio</a>
           <a href="#nosotros">Nosotros</a>
           <a href="#discografia">Discografía</a>
-          <a href="#setlist">Setlist</a>
           <a href="#multimedia">Multimedia</a>
           <a href="#shows">En Vivo</a>
           <a href="#prensa">Prensa / EPK</a>
@@ -191,7 +190,6 @@
     <a href="#inicio">Inicio</a>
     <a href="#nosotros">Nosotros</a>
     <a href="#discografia">Discografía</a>
-    <a href="#setlist">Setlist</a>
     <a href="#multimedia">Multimedia</a>
     <a href="#shows">En Vivo</a>
     <a href="#prensa">Prensa / EPK</a>
@@ -312,7 +310,7 @@
       <div class="about-hero-image reveal">
         <img src="assets/img/band-photo.jpg" alt="Andenes — Los integrantes de la banda" loading="lazy">
         <div class="about-hero-caption">
-          <span class="caption-tag">⚡ Formación Oficial</span>
+          <span class="caption-tag">Formación Oficial</span>
           <span class="caption-text">Luca Bonamaison Marconi · Mateo Ezequiel Morales · Florián Mayol · Santiago Ezequiel Levin</span>
         </div>
       </div>
@@ -366,24 +364,17 @@
       <div class="section-header reveal">
         <span class="section-label">La Formación</span>
         <h2 class="section-title">Los Integrantes</h2>
-        <p class="section-subtitle">Ficha técnica y alineación oficial de Andenes en vivo y en estudio. Hacé click en cualquier tarjeta para ver su ficha completa.</p>
+        <p class="section-subtitle">Alineación oficial de Andenes en vivo y en estudio.</p>
       </div>
 
       <div class="members-grid">
         <!-- Luca Bonamaison Marconi -->
-        <article class="member-card member-dossier reveal reveal-delay-1" data-member-id="luca" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver ficha técnica completa de Luca Bonamaison Marconi">
-          <div class="member-card-header">
-            <span class="member-id-tag">FICHA · AND-01</span>
-            <span class="member-status-badge"><span class="status-dot"></span> EN VIVO</span>
-          </div>
-
+        <article class="member-card member-dossier reveal reveal-delay-1" data-member-id="luca" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver biografía completa de Luca Bonamaison Marconi">
           <div class="member-avatar-wrapper">
             <div class="member-avatar">
               <img src="assets/img/luca.jpg" alt="Luca Bonamaison Marconi — Guitarra y Voz" loading="lazy">
             </div>
-            <span class="member-instrument-badge">
-              <span class="badge-icon">🎸</span> Voz & Guitarra
-            </span>
+            <span class="member-instrument-badge">Voz & Guitarra</span>
           </div>
 
           <div class="member-info">
@@ -391,49 +382,21 @@
             <p class="member-role">Co-Fundador · Voz Líder & Guitarras</p>
           </div>
 
-          <div class="member-specs">
-            <div class="spec-item">
-              <span class="spec-label">Instrumento</span>
-              <span class="spec-value">Guitarra Eléctrica / Criolla & Voz</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Rol en Escena</span>
-              <span class="spec-value">Voz Principal & Guitarra Rítmica</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">En Andenes</span>
-              <span class="spec-value">Desde 2025 · Miembro Fundador</span>
-            </div>
-          </div>
-
-          <div class="member-tags">
-            <span class="member-tag">Voz Líder</span>
-            <span class="member-tag">Composición</span>
-            <span class="member-tag">Riffs</span>
-          </div>
-
           <div class="member-card-footer-action">
             <span class="member-card-action-btn">
-              <span>Ver Ficha Completa</span>
+              <span>Ver biografía</span>
               <span class="btn-plus" aria-hidden="true">+</span>
             </span>
           </div>
         </article>
 
         <!-- Mateo Ezequiel Morales -->
-        <article class="member-card member-dossier reveal reveal-delay-2" data-member-id="mateo" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver ficha técnica completa de Mateo Ezequiel Morales">
-          <div class="member-card-header">
-            <span class="member-id-tag">FICHA · AND-02</span>
-            <span class="member-status-badge"><span class="status-dot"></span> EN VIVO</span>
-          </div>
-
+        <article class="member-card member-dossier reveal reveal-delay-2" data-member-id="mateo" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver biografía completa de Mateo Ezequiel Morales">
           <div class="member-avatar-wrapper">
             <div class="member-avatar">
               <img src="assets/img/mateo.jpg" alt="Mateo Ezequiel Morales — Guitarra y Voz" loading="lazy">
             </div>
-            <span class="member-instrument-badge">
-              <span class="badge-icon">🎸</span> Guitarra & Voz
-            </span>
+            <span class="member-instrument-badge">Guitarra & Voz</span>
           </div>
 
           <div class="member-info">
@@ -441,49 +404,21 @@
             <p class="member-role">Co-Fundador · Guitarra Líder & Voces</p>
           </div>
 
-          <div class="member-specs">
-            <div class="spec-item">
-              <span class="spec-label">Instrumento</span>
-              <span class="spec-value">Guitarra Eléctrica & Micrófono</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Rol en Escena</span>
-              <span class="spec-value">Solos, Arreglos & Segundas Voces</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">En Andenes</span>
-              <span class="spec-value">Desde 2025 · Miembro Fundador</span>
-            </div>
-          </div>
-
-          <div class="member-tags">
-            <span class="member-tag">Lead Guitar</span>
-            <span class="member-tag">Solos</span>
-            <span class="member-tag">Armonías</span>
-          </div>
-
           <div class="member-card-footer-action">
             <span class="member-card-action-btn">
-              <span>Ver Ficha Completa</span>
+              <span>Ver biografía</span>
               <span class="btn-plus" aria-hidden="true">+</span>
             </span>
           </div>
         </article>
 
         <!-- Florián Mayol -->
-        <article class="member-card member-dossier reveal reveal-delay-3" data-member-id="florian" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver ficha técnica completa de Florián Mayol">
-          <div class="member-card-header">
-            <span class="member-id-tag">FICHA · AND-03</span>
-            <span class="member-status-badge"><span class="status-dot"></span> EN VIVO</span>
-          </div>
-
+        <article class="member-card member-dossier reveal reveal-delay-3" data-member-id="florian" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver biografía completa de Florián Mayol">
           <div class="member-avatar-wrapper">
             <div class="member-avatar">
               <img src="assets/img/florian.jpg" alt="Florián Mayol — Bajo y Coros" loading="lazy">
             </div>
-            <span class="member-instrument-badge">
-              <span class="badge-icon">🎸</span> Bajo & Coros
-            </span>
+            <span class="member-instrument-badge">Bajo & Coros</span>
           </div>
 
           <div class="member-info">
@@ -491,49 +426,21 @@
             <p class="member-role">Bajista · Base & Coros</p>
           </div>
 
-          <div class="member-specs">
-            <div class="spec-item">
-              <span class="spec-label">Instrumento</span>
-              <span class="spec-value">Bajo Eléctrico & Micrófono</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Rol en Escena</span>
-              <span class="spec-value">Líneas de Bajo, Groove & Coros</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">En Andenes</span>
-              <span class="spec-value">Desde 2026 · Formación Oficial</span>
-            </div>
-          </div>
-
-          <div class="member-tags">
-            <span class="member-tag">Bajo</span>
-            <span class="member-tag">Low-End</span>
-            <span class="member-tag">Coros</span>
-          </div>
-
           <div class="member-card-footer-action">
             <span class="member-card-action-btn">
-              <span>Ver Ficha Completa</span>
+              <span>Ver biografía</span>
               <span class="btn-plus" aria-hidden="true">+</span>
             </span>
           </div>
         </article>
 
         <!-- Santiago Ezequiel Levin -->
-        <article class="member-card member-dossier reveal reveal-delay-4" data-member-id="santiago" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver ficha técnica completa de Santiago Ezequiel Levin">
-          <div class="member-card-header">
-            <span class="member-id-tag">FICHA · AND-04</span>
-            <span class="member-status-badge"><span class="status-dot"></span> EN VIVO</span>
-          </div>
-
+        <article class="member-card member-dossier reveal reveal-delay-4" data-member-id="santiago" tabindex="0" role="button" aria-haspopup="dialog" aria-label="Ver biografía completa de Santiago Ezequiel Levin">
           <div class="member-avatar-wrapper">
             <div class="member-avatar">
               <img src="assets/img/santiago.jpg" alt="Santiago Ezequiel Levin — Batería" loading="lazy">
             </div>
-            <span class="member-instrument-badge">
-              <span class="badge-icon">🥁</span> Batería
-            </span>
+            <span class="member-instrument-badge">Batería</span>
           </div>
 
           <div class="member-info">
@@ -541,30 +448,9 @@
             <p class="member-role">Co-Fundador · Batería & Pulso</p>
           </div>
 
-          <div class="member-specs">
-            <div class="spec-item">
-              <span class="spec-label">Instrumento</span>
-              <span class="spec-value">Batería Acústica Completa</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">Rol en Escena</span>
-              <span class="spec-value">Base Rítmica, Tempo & Dinámica</span>
-            </div>
-            <div class="spec-item">
-              <span class="spec-label">En Andenes</span>
-              <span class="spec-value">Desde 2025 · Miembro Fundador</span>
-            </div>
-          </div>
-
-          <div class="member-tags">
-            <span class="member-tag">Batería</span>
-            <span class="member-tag">Tempo</span>
-            <span class="member-tag">Potencia</span>
-          </div>
-
           <div class="member-card-footer-action">
             <span class="member-card-action-btn">
-              <span>Ver Ficha Completa</span>
+              <span>Ver biografía</span>
               <span class="btn-plus" aria-hidden="true">+</span>
             </span>
           </div>
@@ -604,7 +490,7 @@
           <div class="disco-info">
             <div class="disco-meta-row">
               <span class="disco-type">Single</span>
-              <span class="badge" style="font-size: 0.72rem; padding: 3px 8px;">🔥 Nuevo Lanzamiento</span>
+              <span class="badge" style="font-size: 0.72rem; padding: 3px 8px;">Nuevo Lanzamiento</span>
             </div>
             <h3 class="disco-title">Amor Interminable</h3>
             <p class="disco-year">6 de septiembre de 2026 · 1 canción, 2 min 47 seg</p>
@@ -646,7 +532,7 @@
                           <span class="track-time">2:47</span>
                         </a>
                         <button type="button" class="btn-track-lyrics" data-track-id="amor-interminable" title="Ver letra de Amor Interminable">
-                          📜 Letra
+                          Letra
                         </button>
                       </div>
                     </div>
@@ -751,7 +637,7 @@
                           <span class="track-time">2:36</span>
                         </a>
                         <button type="button" class="btn-track-lyrics" data-track-id="por-el-sueldo" title="Ver letra de Por El Sueldo">
-                          📜 Letra
+                          Letra
                         </button>
                       </div>
                       <div class="disco-track-wrapper">
@@ -761,7 +647,7 @@
                           <span class="track-time">4:23</span>
                         </a>
                         <button type="button" class="btn-track-lyrics" data-track-id="luz-de-madrugada" title="Ver letra de Luz De Madrugada">
-                          📜 Letra
+                          Letra
                         </button>
                       </div>
                       <div class="disco-track-wrapper">
@@ -771,7 +657,7 @@
                           <span class="track-time">3:22</span>
                         </a>
                         <button type="button" class="btn-track-lyrics" data-track-id="desde-lo-lejos" title="Ver letra de Desde Lo Lejos">
-                          📜 Letra
+                          Letra
                         </button>
                       </div>
                       <div class="disco-track-wrapper">
@@ -781,7 +667,7 @@
                           <span class="track-time">3:44</span>
                         </a>
                         <button type="button" class="btn-track-lyrics" data-track-id="para-ser-libre" title="Ver letra de Para Ser Libre">
-                          📜 Letra
+                          Letra
                         </button>
                       </div>
                     </div>
@@ -837,42 +723,6 @@
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════════════════════════════
-       SETLIST EN VIVO / REPERTORIO
-       ═══════════════════════════════════════════════════════════ -->
-  <section class="section setlist-section" id="setlist">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-label">En Escenario</span>
-        <h2 class="section-title">El Setlist en Vivo</h2>
-        <p class="section-subtitle">Selección del repertorio de Andenes en recitales. Temas propios y homenajes del rock nacional.</p>
-      </div>
-
-      <div class="setlist-toolbar reveal">
-        <div class="setlist-stats">
-          <span class="setlist-count-badge"><strong id="setlistCount">20</strong> Canciones en el repertorio oficial</span>
-          <span class="setlist-legend-tag">⚡ 5 Temas Propios + 15 Clásicos del Rock</span>
-        </div>
-        <div class="setlist-filters" id="setlistFilters" role="tablist" aria-label="Filtrar repertorio">
-          <button type="button" class="btn-setlist-filter active" data-filter="all">Todos (20)</button>
-          <button type="button" class="btn-setlist-filter" data-filter="propio">Propios (5)</button>
-          <button type="button" class="btn-setlist-filter" data-filter="cover">Homenajes (15)</button>
-        </div>
-      </div>
-
-      <div class="setlist-grid" id="setlistGrid">
-        <!-- Rendered and shuffled dynamically via JS -->
-      </div>
-
-      <div class="setlist-expand-wrap" id="setlistExpandWrap">
-        <button type="button" class="btn-setlist-expand" id="btnToggleSetlistExpand" aria-expanded="false">
-          <span class="expand-text" id="setlistExpandText">Ver repertorio completo en vivo (20 temas)</span>
-          <span class="expand-arrow" aria-hidden="true">▼</span>
-        </button>
-      </div>
-    </div>
-  </section>
-
 
   <!-- ═══════════════════════════════════════════════════════════
        MULTIMEDIA SECTION
@@ -891,7 +741,7 @@
           <img src="assets/img/gallery-live-1.jpg" alt="Andenes tocando en vivo en el escenario" loading="lazy">
           <div class="gallery-overlay">
             <span class="gallery-caption">Andenes · Show en vivo</span>
-            <span class="gallery-zoom-badge">🔍 Ampliar</span>
+            <span class="gallery-zoom-badge">Ampliar</span>
           </div>
         </div>
 
@@ -899,7 +749,7 @@
           <img src="assets/img/luca.jpg" alt="Luca Bonamaison Marconi — Guitarra & Voz en vivo" loading="lazy">
           <div class="gallery-overlay">
             <span class="gallery-caption">Luca · Voz & Guitarra</span>
-            <span class="gallery-zoom-badge">🔍 Ampliar</span>
+            <span class="gallery-zoom-badge">Ampliar</span>
           </div>
         </div>
 
@@ -907,7 +757,7 @@
           <img src="assets/img/mateo.jpg" alt="Mateo Ezequiel Morales — Guitarra & Voz en vivo" loading="lazy">
           <div class="gallery-overlay">
             <span class="gallery-caption">Mateo · Guitarra & Voz</span>
-            <span class="gallery-zoom-badge">🔍 Ampliar</span>
+            <span class="gallery-zoom-badge">Ampliar</span>
           </div>
         </div>
 
@@ -915,7 +765,7 @@
           <img src="assets/img/florian.jpg" alt="Florián Mayol — Bajo & Coros en vivo" loading="lazy">
           <div class="gallery-overlay">
             <span class="gallery-caption">Florián · Bajo & Coros</span>
-            <span class="gallery-zoom-badge">🔍 Ampliar</span>
+            <span class="gallery-zoom-badge">Ampliar</span>
           </div>
         </div>
 
@@ -923,7 +773,7 @@
           <img src="assets/img/santiago.jpg" alt="Santiago Ezequiel Levin — Batería en vivo" loading="lazy">
           <div class="gallery-overlay">
             <span class="gallery-caption">Santiago · Batería</span>
-            <span class="gallery-zoom-badge">🔍 Ampliar</span>
+            <span class="gallery-zoom-badge">Ampliar</span>
           </div>
         </div>
 
@@ -931,7 +781,7 @@
           <img src="assets/img/band-photo.jpg" alt="Andenes — sesión de fotos" loading="lazy">
           <div class="gallery-overlay">
             <span class="gallery-caption">Andenes · Formación</span>
-            <span class="gallery-zoom-badge">🔍 Ampliar</span>
+            <span class="gallery-zoom-badge">Ampliar</span>
           </div>
         </div>
       </div>
@@ -958,7 +808,7 @@
             </div>
             <div class="video-info">
               <div style="margin-bottom: var(--space-2xs);">
-                <span class="badge" style="font-size: 0.7rem; padding: 2px 8px;">🔥 Más reciente</span>
+                <span class="badge" style="font-size: 0.7rem; padding: 2px 8px;">Más reciente</span>
               </div>
               <h3 class="video-title">Presentación en “El Club de Tus Amores”</h3>
               <p class="video-meta">Show en vivo · 2026</p>
@@ -1002,7 +852,7 @@
             </div>
             <div class="video-info">
               <div style="margin-bottom: var(--space-2xs);">
-                <span class="badge" style="font-size: 0.7rem; padding: 2px 8px; background: rgba(255,255,255,0.08); border-color: var(--clr-border); color: var(--clr-text-secondary);">🎸 Primer video</span>
+                <span class="badge" style="font-size: 0.7rem; padding: 2px 8px; background: rgba(255,255,255,0.08); border-color: var(--clr-border); color: var(--clr-text-secondary);">Primer video</span>
               </div>
               <h3 class="video-title">Presentación en el Rock in Cuba</h3>
               <p class="video-meta">Show en vivo · Rock in Cuba 2025</p>
@@ -1051,7 +901,7 @@
           <div class="featured-show-main">
             <h3 class="featured-show-title">Show Especial de Fin de Año — CABA</h3>
             <p class="featured-show-venue">
-              <span class="pin">📍</span>
+              
               <strong>The Roxy Live / El Emergente</strong> · Buenos Aires · ⏰ Puerta 20:30 hs / Show 21:30 hs
             </p>
             <p class="featured-show-desc">
@@ -1090,8 +940,7 @@
           <div class="show-details">
             <h3>Rock in Cuba</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
-              <span>Buenos Aires · ⏰ 16:30 a 17:00 hs</span>
+              <span>Buenos Aires · 16:30 a 17:00 hs</span>
             </p>
             <div class="show-countdown-badge" id="showCountdownBadge" aria-label="Cuenta regresiva del próximo recital">
               <span class="countdown-pulse"></span>
@@ -1100,27 +949,27 @@
             </div>
             <div class="upcoming-actions-row">
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSembxRCFsCMFyN0d6ycwtZPGDBohC66F0IJUyjNQHf_GH1oiA/viewform" target="_blank" rel="noopener noreferrer" class="btn-show-action primary">
-                <span>🎟️ Conseguí tus Entradas</span>
+                <span>Conseguí tus Entradas</span>
               </a>
               <div class="calendar-dropdown">
                 <button type="button" class="btn-show-action" id="btnCalendarToggle">
-                  <span>📅 Agendar Fecha</span>
+                  <span>Agendar Fecha</span>
                   <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="6 9 12 15 18 9"></polyline></svg>
                 </button>
                 <div class="calendar-menu" id="calendarMenu">
                   <a href="#" class="calendar-menu-item" id="btnGoogleCalendar">
-                    <span>🗓️ Google Calendar</span>
+                    <span>Google Calendar</span>
                   </a>
                   <a href="#" class="calendar-menu-item" id="btnIcalDownload">
-                    <span>🍏 Apple / iCal (.ics)</span>
+                    <span>Apple Calendar (.ics)</span>
                   </a>
                 </div>
               </div>
               <a href="https://maps.app.goo.gl/AHjtrTTVgA2oQjpz5" target="_blank" rel="noopener noreferrer" class="btn-show-action">
-                <span>📍 Cómo llegar</span>
+                <span>Cómo llegar</span>
               </a>
-              <button type="button" class="btn-show-action btn-share-action" data-share-title="Andenes en Vivo — Rock in Cuba (24 de Octubre)" data-share-text="¡Andenes toca el 24 de Octubre de 16:30 a 17:00 hs en Rock in Cuba! 🎸 Conseguí tus entradas acá:" data-share-url="https://docs.google.com/forms/d/e/1FAIpQLSembxRCFsCMFyN0d6ycwtZPGDBohC66F0IJUyjNQHf_GH1oiA/viewform" title="Compartir fecha del show">
-                <span>📲 Compartir</span>
+              <button type="button" class="btn-show-action btn-share-action" data-share-title="Andenes en Vivo — Rock in Cuba (24 de Octubre)" data-share-text="¡Andenes toca el 24 de Octubre de 16:30 a 17:00 hs en Rock in Cuba! Conseguí tus entradas acá:" data-share-url="https://docs.google.com/forms/d/e/1FAIpQLSembxRCFsCMFyN0d6ycwtZPGDBohC66F0IJUyjNQHf_GH1oiA/viewform" title="Compartir fecha del show">
+                <span>Compartir</span>
               </button>
             </div>
           </div>
@@ -1141,7 +990,7 @@
           <div class="show-details">
             <h3>EPA JAM</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Emily Daniels
             </p>
           </div>
@@ -1161,7 +1010,7 @@
           <div class="show-details">
             <h3>Emily Daniels</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Buenos Aires
             </p>
           </div>
@@ -1181,7 +1030,7 @@
           <div class="show-details">
             <h3>EPA JAM</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Emily Daniels
             </p>
           </div>
@@ -1201,7 +1050,7 @@
           <div class="show-details">
             <h3>Liceo 9</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Buenos Aires
             </p>
           </div>
@@ -1221,7 +1070,7 @@
           <div class="show-details">
             <h3>EPA JAM</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Emily Daniels
             </p>
           </div>
@@ -1241,7 +1090,7 @@
           <div class="show-details">
             <h3>Fragata Fest</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Buenos Aires
             </p>
           </div>
@@ -1261,7 +1110,7 @@
           <div class="show-details">
             <h3>EPA JAM</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Emily Daniels
             </p>
           </div>
@@ -1281,7 +1130,7 @@
           <div class="show-details">
             <h3>El Club de Tus Amores</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Buenos Aires
             </p>
           </div>
@@ -1301,7 +1150,7 @@
           <div class="show-details">
             <h3>El Emergente</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Buenos Aires
             </p>
           </div>
@@ -1322,7 +1171,7 @@
           <div class="show-details">
             <h3>Liceo 9</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Buenos Aires
             </p>
           </div>
@@ -1342,7 +1191,7 @@
           <div class="show-details">
             <h3>Rock in Cuba</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Buenos Aires
             </p>
           </div>
@@ -1362,7 +1211,7 @@
           <div class="show-details">
             <h3>Fragata Fest</h3>
             <p class="show-venue">
-              <span class="pin">📍</span>
+              
               Primer Show de Andenes · Buenos Aires
             </p>
           </div>
@@ -1395,105 +1244,34 @@
         <p class="section-subtitle">Todo lo que necesitás para cubrir, programar o compartir a Andenes.</p>
       </div>
 
-      <div class="epk-grid">
+      <div class="epk-grid" style="grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
         <!-- Bio & Gacetilla -->
         <div class="epk-card reveal reveal-delay-1">
           <div class="epk-card-header">
-            <h3>📝 Gacetilla de Prensa</h3>
+            <h3>Gacetilla de Prensa</h3>
           </div>
           <p class="epk-bio-text" id="epkBioText">Andenes es una banda de rock argentino independiente formada en 2025 en Buenos Aires, integrada por Luca Bonamaison Marconi (guitarra y voz), Mateo Ezequiel Morales (guitarra y voz), Florián Mayol (bajo y coros) y Santiago Ezequiel Levin (batería). En febrero de 2026, lanzaron su primer EP "Para Ser Libre" con 4 canciones originales. En septiembre de 2026, publicaron el single "Amor Interminable". Desde su formación, la banda acumula más de 13 presentaciones en vivo en Buenos Aires, incluyendo festivales como Rock in Cuba y Fragata Fest, y venues como El Emergente y El Club de Tus Amores. Su propuesta combina la energía del rock argentino clásico con una mirada contemporánea e independiente. Contacto: andenesbanda@gmail.com.</p>
           <div class="epk-actions">
-            <button type="button" class="btn-merch" id="btnCopyEpkBio">📋 Copiar Gacetilla</button>
+            <button type="button" class="btn-merch" id="btnCopyEpkBio">Copiar Gacetilla</button>
+            <button type="button" class="btn-merch secondary" id="btnCopyRiderBares">Rider Bares & Colegios</button>
+            <button type="button" class="btn-merch secondary" id="btnCopyRiderFestivales">Rider Festivales & Salas</button>
           </div>
         </div>
 
-        <!-- Rider Técnico -->
-        <div class="epk-card reveal reveal-delay-2">
+        <!-- ── RIDER TÉCNICO EN PANTALLA (OCULTO — se copia directo con el botón) ──
+        <div class="epk-card reveal reveal-delay-2" style="display:none;">
           <div class="epk-card-header">
-            <h3>🔊 Rider Técnico</h3>
+            <h3>Rider Técnico</h3>
             <span class="epk-rider-badge" id="epkRiderBadge">Setup Bares & Colegios</span>
           </div>
-
-          <!-- Selector de formato -->
           <div class="epk-tabs" role="tablist" aria-label="Formatos de Rider">
-            <button type="button" class="epk-tab active" data-rider="reducido" role="tab" aria-selected="true">
-              🏫 Bares & Colegios
-            </button>
-            <button type="button" class="epk-tab" data-rider="completo" role="tab" aria-selected="false">
-              🎪 Festivales & Salas
-            </button>
+            <button type="button" class="epk-tab active" data-rider="reducido" role="tab" aria-selected="true">Bares & Colegios</button>
+            <button type="button" class="epk-tab" data-rider="completo" role="tab" aria-selected="false">Festivales & Salas</button>
           </div>
-
-          <!-- Formato 1: Bares y Colegios (Reducido / Rápido) -->
-          <div class="epk-tab-content active" id="riderTabReducido">
-            <ul class="epk-rider-list">
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Voces (3 Micrófonos con pie):</strong> 2 micrófonos frontales para guitarras/voz (Luca y Mateo) + 1 micrófono con pie jirafa para Florián (apoyo de coros en temas seleccionados). Salidas XLR a la PA del lugar.</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>2 Guitarras Eléctricas (Luca y Mateo):</strong> Cada uno con su pedalera/pedales propios + amplificadores de guitarra sonando directo al salón (no requiere microfonear en lugares chicos).</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Bajo Eléctrico (Florián):</strong> Bajo + amplificador propio o línea directa (DI) hacia la consola del lugar.</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Batería Acústica (Santiago):</strong> Sonido acústico natural de sala. Opcional: 1 micrófono en bombo si el espacio es abierto o patio escolar.</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Tomas 220V:</strong> Mínimo 2 o 3 tomas de corriente al frente del escenario para alimentar pedaleras de ambas guitarras y afinadores.</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Monitoreo:</strong> Mínimo 1 o 2 monitores de piso para referencia de voces (o sin retorno según capacidad del lugar).</span>
-              </li>
-            </ul>
-            <div class="epk-rider-note">
-              💡 <em>Setup ágil pensado para armar y calibrar rápido en patios de colegio, aulas magnas o bares pequeños.</em>
-            </div>
-          </div>
-
-          <!-- Formato 2: Festivales y Salas Grandes (Completo) -->
-          <div class="epk-tab-content" id="riderTabCompleto">
-            <ul class="epk-rider-list">
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Voces (3 canales):</strong> 3 micrófonos Shure SM58 (o superior) en pies de jirafa: Ch 1 (Luca - Voz principal & Guitarra), Ch 2 (Mateo - Voz principal & Guitarra), Ch 3 (Florián - Coros en temas seleccionados & Bajo).</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>2 Guitarras Eléctricas (2 canales):</strong> Microfoneo de amplificadores con Shure SM57 o Sennheiser e609. Ambos guitarristas usan pedalera propia en el piso (requiere 220V al frente).</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Bajo Eléctrico (1 canal):</strong> Salida directa por caja directa activa (DI balanceada) a consola + amplificador de bajo en escenario (Ampeg, Fender o similar).</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Batería Completa (Microfoneo estándar):</strong> Bombo (Beta 52/D112), Redoblante/Caja (SM57), Hi-Hat y 2 Overheads para platillos.</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Monitoreo en Escenario:</strong> 3 o 4 vías independientes (Vía 1: Luca, Vía 2: Mateo, Vía 3: Florián, Vía 4: Santiago en batería).</span>
-              </li>
-              <li class="epk-rider-item">
-                <span class="check">✓</span>
-                <span><strong>Espacio de Escenario:</strong> Mínimo 4m x 3m (ideal 5m x 4m) con tarima firme.</span>
-              </li>
-            </ul>
-            <div class="epk-rider-note">
-              ⚡ <em>Formato profesional para teatros, clubes de música y festivales (Rock in Cuba, El Emergente, festivales al aire libre).</em>
-            </div>
-          </div>
-
-          <div class="epk-actions" style="margin-top: 18px;">
-            <button type="button" class="btn-merch" id="btnCopyRider">📋 Copiar Rider Técnico</button>
-          </div>
+          <div class="epk-tab-content active" id="riderTabReducido"></div>
+          <div class="epk-tab-content" id="riderTabCompleto"></div>
         </div>
+        -->
       </div>
 
 
@@ -1688,71 +1466,6 @@
   </footer>
 
 
-  <!-- ═══════════════════════════════════════════════════════════
-       FLOATING AUDIO PLAYER (Mini Reproductor Aleatorio)
-       ═══════════════════════════════════════════════════════════ -->
-  <aside class="floating-player" id="floatingPlayer" aria-label="Mini reproductor de música">
-    <audio id="playerAudio" preload="none"></audio>
-    <div class="player-card" id="playerCard">
-      <!-- Cover art with animated equalizer -->
-      <div class="player-cover-wrap">
-        <img src="assets/img/single-amor-interminable.jpg" alt="Portada de canción" id="playerCoverImg" class="player-cover-img">
-        <div class="player-eq-badge" id="playerEqBadge" aria-hidden="true">
-          <span class="eq-bar"></span>
-          <span class="eq-bar"></span>
-          <span class="eq-bar"></span>
-        </div>
-      </div>
-
-      <!-- Info & Track Scrubber -->
-      <div class="player-info-wrap">
-        <div class="player-meta-row">
-          <span class="player-tag">📻 EN LA RADIO</span>
-          <button type="button" class="player-random-pill" id="btnPlayerRandomPill" title="Elegir otro tema al azar" aria-label="Elegir otro tema al azar">
-            <span class="dice-icon" aria-hidden="true">🎲</span>
-            <span>Random</span>
-          </button>
-        </div>
-        <div class="player-title-row">
-          <span class="player-track-name" id="playerTrackName">Amor Interminable</span>
-          <span class="player-artist-name">Andenes</span>
-        </div>
-        <!-- Progress bar -->
-        <div class="player-progress-container" id="playerProgressContainer" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0" aria-label="Barra de progreso de audio">
-          <div class="player-progress-bar" id="playerProgressBar"></div>
-        </div>
-        <div class="player-time-row">
-          <span class="player-time-current" id="playerTimeCurrent">0:00</span>
-          <span class="player-time-duration" id="playerTimeDuration">3:32</span>
-        </div>
-      </div>
-
-      <!-- Player Controls -->
-      <div class="player-controls">
-        <button type="button" class="player-btn btn-play" id="btnPlayerPlay" aria-label="Reproducir canción">
-          <svg class="icon-play" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-          <svg class="icon-pause" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" style="display:none;"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
-        </button>
-        <button type="button" class="player-btn btn-next" id="btnPlayerNext" title="Siguiente canción aleatoria (Shuffle)" aria-label="Siguiente canción aleatoria">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.45 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
-        </button>
-        <a href="https://open.spotify.com/intl-es/track/41b4oa8aD3Hvg8EqQDJqBU?si=d55dd9983e6f404a" target="_blank" rel="noopener noreferrer" class="player-btn btn-spotify" id="playerSpotifyLink" title="Escuchar en Spotify" aria-label="Escuchar en Spotify">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 5.524 4.477 10 10 10s10-4.476 10-10c0-5.523-4.477-10-10-10zm4.586 14.424c-.18.295-.563.387-.857.208-2.35-1.434-5.308-1.758-8.793-.962-.333.076-.664-.132-.74-.464-.077-.333.132-.664.464-.74 3.812-.872 7.08-.507 9.718 1.101.294.18.386.564.208.857zm1.224-2.719c-.226.368-.71.482-1.077.256-2.69-1.653-6.79-2.132-9.97-1.166-.413.126-.851-.107-.977-.52-.125-.413.107-.852.52-.977 3.633-1.103 8.147-.568 11.248 1.33.367.226.482.71.256 1.077zm.105-2.835C14.692 8.948 9.39 8.771 6.305 9.708c-.494.15-1.02-.128-1.17-.622-.15-.494.128-1.02.622-1.17 3.551-1.078 9.42-.871 13.131 1.332.443.263.587.838.324 1.281-.263.443-.838.587-1.281.324z"/></svg>
-        </a>
-        <button type="button" class="player-btn btn-collapse" id="btnPlayerToggle" title="Minimizar reproductor" aria-label="Minimizar reproductor">
-          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mini Pastilla Flotante cuando está colapsado -->
-    <button type="button" class="player-collapsed-pill" id="playerCollapsedPill" aria-label="Abrir reproductor de música" style="display:none;">
-      <span class="pill-dot"></span>
-      <span class="pill-title" id="playerPillTitle">🎵 Amor Interminable</span>
-      <span class="pill-action">▶</span>
-    </button>
-  </aside>
-
   <!-- Back to Top Button -->
   <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -1843,7 +1556,7 @@
         <div class="member-modal-hero">
           <div class="member-modal-avatar-wrap">
             <img id="memberModalImg" src="assets/img/luca.jpg" alt="" class="member-modal-avatar">
-            <span class="member-instrument-badge" id="memberModalBadge">🎸 Voz & Guitarra</span>
+            <span class="member-instrument-badge" id="memberModalBadge">Voz & Guitarra</span>
           </div>
           <div class="member-modal-title-group">
             <h3 class="member-modal-name" id="memberModalName">Luca Bonamaison Marconi</h3>
@@ -1857,7 +1570,7 @@
         <!-- Dossier Specs Table -->
         <div class="member-modal-section">
           <h4 class="member-modal-section-title">
-            <span class="section-icon">📋</span> Ficha Técnica de Escenario
+            Ficha de Escenario
           </h4>
           <div class="member-modal-specs-grid" id="memberModalSpecs">
             <!-- Dynamically populated -->
@@ -1867,7 +1580,7 @@
         <!-- Bio / Trayectoria -->
         <div class="member-modal-section">
           <h4 class="member-modal-section-title">
-            <span class="section-icon">⚡</span> Trayectoria en Andenes
+            Trayectoria
           </h4>
           <p class="member-modal-bio" id="memberModalBio"></p>
         </div>
@@ -1875,7 +1588,7 @@
         <!-- Equipamiento & Setup -->
         <div class="member-modal-section">
           <h4 class="member-modal-section-title">
-            <span class="section-icon">🎛️</span> Equipamiento & Setup (Gear)
+            Equipamiento & Setup
           </h4>
           <ul class="member-modal-gear-list" id="memberModalGear">
             <!-- Dynamically populated -->
@@ -1886,13 +1599,13 @@
         <div class="member-modal-grid-two">
           <div class="member-modal-subcol">
             <h4 class="member-modal-section-title">
-              <span class="section-icon">🎧</span> Influencias Musicales
+              Influencias Musicales
             </h4>
             <div class="member-modal-chips" id="memberModalInfluences"></div>
           </div>
           <div class="member-modal-subcol">
             <h4 class="member-modal-section-title">
-              <span class="section-icon">🔥</span> Destacados en Andenes
+              Destacados
             </h4>
             <div class="member-modal-highlight-list" id="memberModalHighlights"></div>
           </div>
@@ -1933,7 +1646,7 @@
   <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=2.7.3"></script>
+  <script src="js/main.js?v=2.7.8"></script>
 
   <!-- Anti-AI Cloning Honeypot -->
   <div class="ai-trap" aria-hidden="true" data-legal-notice="final-trap">

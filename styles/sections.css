@@ -1,4 +1,4 @@
-/* ============================================================
+﻿/* ============================================================
    ANDENES — Section-Specific Styles
    ============================================================ */
 
@@ -1822,13 +1822,26 @@
   box-shadow: 0 4px 15px rgba(196, 30, 42, 0.4);
 }
 
+.btn-merch.secondary {
+  background: transparent;
+  color: var(--clr-text-primary);
+  border-color: var(--clr-border-light);
+}
+
+.btn-merch.secondary:hover {
+  background: rgba(196, 30, 42, 0.15);
+  border-color: var(--clr-accent);
+  color: #fff;
+}
+
 /* ============================================================
    EPK / KIT DE PRENSA
    ============================================================ */
 .epk-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: var(--space-2xl);
+  width: 100%;
 }
 
 .epk-card {
@@ -1838,6 +1851,8 @@
   padding: var(--space-xl);
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  box-sizing: border-box;
 }
 
 .epk-card-header {
@@ -1991,227 +2006,12 @@
 }
 
 
-/* ══════════════════════════════════════════════════════════════
-   EL SETLIST EN VIVO / REPERTORIO
-   ══════════════════════════════════════════════════════════════ */
-.setlist-section {
-  background: var(--clr-bg-primary);
-  position: relative;
-}
-
-.setlist-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 24px;
-  padding: 12px 18px;
-  background: rgba(18, 18, 22, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: var(--radius-lg);
-  backdrop-filter: blur(8px);
-}
-
-.setlist-stats {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.setlist-count-badge {
-  font-family: var(--ff-mono, monospace);
-  font-size: 0.82rem;
-  color: var(--clr-text-secondary);
-}
-
-.setlist-count-badge strong {
-  color: var(--clr-accent-light);
-  font-weight: 700;
-}
-
-.setlist-legend-tag {
-  font-size: 0.76rem;
-  color: var(--clr-text-muted);
-  background: rgba(255, 255, 255, 0.04);
-  padding: 3px 10px;
-  border-radius: var(--radius-full);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.setlist-filters {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.btn-setlist-filter {
-  font-family: inherit;
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: var(--clr-text-secondary);
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 5px 12px;
-  border-radius: var(--radius-full);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.btn-setlist-filter:hover {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.25);
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.btn-setlist-filter.active {
-  color: #fff;
-  background: var(--clr-accent);
-  border-color: var(--clr-accent);
-  box-shadow: 0 0 10px rgba(196, 30, 42, 0.4);
-}
-
-.setlist-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-}
-
-.setlist-grid.is-shuffling {
-  opacity: 0.3;
-  transform: scale(0.985);
-}
-
-.setlist-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 14px 18px;
-  background: linear-gradient(180deg, rgba(22, 22, 26, 0.9) 0%, rgba(14, 14, 17, 0.95) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  transition: transform var(--transition-base),
-              border-color var(--transition-base),
-              box-shadow var(--transition-base);
-  position: relative;
-  overflow: hidden;
-}
-
-.setlist-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 3px;
-  background: transparent;
-  transition: background var(--transition-base);
-}
-
-.setlist-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(196, 30, 42, 0.5);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7), 0 0 20px rgba(196, 30, 42, 0.15);
-}
-
-.setlist-card:hover::before {
-  background: var(--clr-accent);
-}
-
-.setlist-body {
-  flex: 1;
-  min-width: 0;
-}
-
-.setlist-header-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 4px;
-}
-
-.setlist-title {
-  font-size: 0.98rem;
-  font-weight: 700;
-  color: var(--clr-text-primary);
-  line-height: 1.25;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.setlist-tag {
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 2px 7px;
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-}
-
-.setlist-tag.propio {
-  color: #4ade80;
-  background: rgba(74, 222, 128, 0.1);
-  border: 1px solid rgba(74, 222, 128, 0.25);
-}
-
-.setlist-tag.cover {
-  color: #f59e0b;
-  background: rgba(245, 158, 11, 0.1);
-  border: 1px solid rgba(245, 158, 11, 0.25);
-}
-
-.setlist-info {
-  font-size: 0.76rem;
-  color: var(--clr-text-muted);
-  line-height: 1.35;
-}
-
-.setlist-actions {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-shrink: 0;
-}
-
-.btn-setlist-action {
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: var(--clr-text-secondary);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  padding: 5px 10px;
-  border-radius: var(--radius-sm);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-  white-space: nowrap;
-}
-
-.btn-setlist-action:hover {
-  background: var(--clr-accent);
-  border-color: var(--clr-accent);
-  color: #fff;
-}
-
-.btn-setlist-action.btn-spotify-action:hover {
-  background: rgba(29, 185, 84, 0.2);
-  border-color: #1db954;
-  color: #1ed760;
-}
-
-.setlist-expand-wrap,
 .shows-expand-wrap {
   display: flex;
   justify-content: center;
   margin-top: 28px;
 }
 
-.btn-setlist-expand,
 .btn-shows-expand {
   display: inline-flex;
   align-items: center;
@@ -2230,7 +2030,6 @@
   transition: all var(--transition-base);
 }
 
-.btn-setlist-expand:hover,
 .btn-shows-expand:hover {
   background: var(--clr-accent);
   border-color: var(--clr-accent);
@@ -2239,14 +2038,12 @@
   color: #fff;
 }
 
-.btn-setlist-expand .expand-arrow,
 .btn-shows-expand .expand-arrow {
   font-size: 0.72rem;
   transition: transform var(--transition-base);
   display: inline-block;
 }
 
-.btn-setlist-expand.is-expanded .expand-arrow,
 .btn-shows-expand.is-expanded .expand-arrow {
   transform: rotate(180deg);
 }
