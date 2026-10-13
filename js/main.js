@@ -1884,7 +1884,7 @@ function initVideoModal() {
 
     const origin = (window.location.origin && window.location.origin !== 'null') 
       ? window.location.origin 
-      : 'https://andenesoficial.netlify.app';
+      : 'https://andenes.vercel.app';
 
     frame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&enablejsapi=1&origin=${encodeURIComponent(origin)}`;
     if (titleEl) titleEl.textContent = title || 'Show en vivo — Andenes';
