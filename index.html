@@ -55,9 +55,10 @@
   <link rel="canonical" href="https://andenes.vercel.app/">
 
   <!-- Favicon & PWA -->
-  <link rel="icon" type="image/png" href="assets/img/favicon.png">
-  <link rel="apple-touch-icon" href="assets/img/favicon.png">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png?v=2">
+  <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png?v=2">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png?v=2">
+  <link rel="manifest" href="manifest.webmanifest?v=2">
 
   <!-- Schema.org Datos Estructurados (SEO Google) -->
   <script type="application/ld+json">
@@ -108,24 +109,37 @@
       {
         "@type": "MusicEvent",
         "name": "Andenes en Vivo — Rock in Cuba",
+        "description": "Recital en vivo de la banda de rock argentino Andenes en el festival Rock in Cuba (Buenos Aires) de 16:30 a 17:00 hs. Entradas anticipadas disponibles.",
+        "image": [
+          "https://andenes.vercel.app/assets/img/hero-bg.jpg",
+          "https://andenes.vercel.app/assets/img/band-photo.jpg",
+          "https://andenes.vercel.app/assets/img/gallery-live-1.jpg"
+        ],
         "startDate": "2026-10-24T16:30:00-03:00",
         "endDate": "2026-10-24T17:00:00-03:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
         "performer": { "@id": "https://andenesbanda.com/#band" },
         "location": {
           "@type": "Place",
           "name": "Rock in Cuba",
           "address": {
             "@type": "PostalAddress",
+            "streetAddress": "Cuba 2410",
             "addressLocality": "Buenos Aires",
+            "addressRegion": "CABA",
+            "postalCode": "C1428",
             "addressCountry": "AR"
           }
         },
         "offers": {
           "@type": "Offer",
           "url": "https://docs.google.com/forms/d/e/1FAIpQLSembxRCFsCMFyN0d6ycwtZPGDBohC66F0IJUyjNQHf_GH1oiA/viewform",
+          "price": "3000",
+          "priceCurrency": "ARS",
+          "validFrom": "2026-08-21T00:00:00-03:00",
           "availability": "https://schema.org/InStock"
-        },
-        "eventStatus": "https://schema.org/EventScheduled"
+        }
       }
     ]
   }
